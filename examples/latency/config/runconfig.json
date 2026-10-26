@@ -1,0 +1,13 @@
+{
+    "global": {},
+    "machines": [
+        {
+            "role": "sender",
+            "address": "sap.local"
+        },
+        {
+            "role": "receiver",
+            "address": "beelzebub.local"
+        }
+    ]
+}

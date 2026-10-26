@@ -1,0 +1,22 @@
+{
+    "configVersion": 20260311,
+    "StatisticsConfig": {
+        "interval": 10.0,
+        "outputFile": "stats.log",
+        "outputFileAppend": false
+    },
+    "AutoStartConfig": {
+        "autoCreateForUser": "sap",
+        "sessionName": "vrtrun-test",
+        "sessionScenario": "Pilot 0",
+        "sessionTransportProtocol": "socketio",
+        "autoStartWith": 2,
+        "autoLeaveAfter": 60.0,
+        "autoStopAfterLeave": true,
+        "autoDelay": 1.0
+    },
+    "RepresentationConfig": {
+        "microphoneName": "Muted",
+        "representation_str": "SimpleAvatar"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "configVersion": 20260311,
+    "StatisticsConfig": {
+        "interval": 0,
+        "outputFile": "stats.log",
+        "outputFileAppend": false
+    },
+    "AutoStartConfig": {
+        "autoCreateForUser": "sender",
+        "sessionName": "vrtrun-latency-test",
+        "sessionScenario": "Pilot 0",
+        "sessionTransportProtocol": "socketio",
+        "autoStartWith": 2,
+        "autoLeaveAfter": 60.0,
+        "autoStopAfterLeave": true,
+        "autoDelay": 1.0
+    },
+    "PointCloudTransmissionConfig": {
+        "tiled": false,
+        "EncoderConfigs": [{"octreeBits": 9}]
+    },
+    "RepresentationConfig": {
+        "microphoneName": "Muted"
+    }
+}

@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Attach",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "${workspaceFolder}"
+                }
+            ]
+        },
+        {
+            "name": "Python Debugger: Attach using Process Id",
+            "type": "debugpy",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        },
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}/data"
+        },
+        {
+            "name": "Python: Module ingest-new",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "VRTstatistics.scripts.ingest",
+            "args": [
+                "--norun", "/Users/jack/src/VRTogether/2024-spirit-lldash/experiments/surrey-dash099-unidirectional/run_untiled_7_15_0ms/run-20250610-2109",
+                "--annotator",
+                "latency"
+            ],
+            "cwd": "/Users/jack/src/VRTogether/2024-spirit-lldash/experiments/surrey-dash099-unidirectional/run_untiled_7_15_0ms/"
+        }
+    ]
+}
